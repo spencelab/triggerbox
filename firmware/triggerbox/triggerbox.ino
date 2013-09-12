@@ -26,6 +26,9 @@ clock.
 #include <EEPROM.h>
 #include <SPI.h>
 
+// set default channel_name in EEPROM to "" when flashing new firmware
+unsigned char eeprom_variable1 __attribute__((section(".eeprom"))) = 0x00;
+
 #define WITH_AOUT
 #ifdef WITH_AOUT
 

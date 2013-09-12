@@ -6,3 +6,5 @@ ARDUINO_DIR = /usr/share/arduino
 ARDUINO_PORT = /dev/ttyACM* /dev/ttyUSB*
 BOARD_TAG = nano328
 include /usr/share/arduino/Arduino.mk
+
+upload_all: upload eeprom
