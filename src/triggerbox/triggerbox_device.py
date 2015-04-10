@@ -458,7 +458,7 @@ if __name__=='__main__':
 
     logging.basicConfig(level=logging.DEBUG)
     td = TriggerboxDevice(port)
-    for i in itertools.cycle(range(5,200,10)):
+    for i in itertools.cycle([15,30]):
         td.set_triggerrate(i)
         time.sleep(10)
 
